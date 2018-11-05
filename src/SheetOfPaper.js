@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-class App extends Component {
+
+class SheetOfPaper extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="sheet-of-paper">
         
       </div>
     );
   }
 }
-
-export default App;
