@@ -3,63 +3,94 @@
   <head>
     <meta charset="utf-8">
     <link rel="shortcut icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Survey Form</title>
   </head>
   <body>
-    <h1 id="title">Cliche Clashes in Programming</h1>
-    
-    <p id="description">The following survey collects data about which side is winning in all of the major programming battlefields. Choose your side!</p>
-    
-    <form action="submit" id="survey-form">
-      <label for="name" id="name-label">Name:</label>
-      <input type="text" placeholder="camper cat" id="name" required>
+    <main class="master-container">
+      <h1 id="title">Choose your side!</h1>
+      
+      <p id="description">The following survey collects data about which side people are on in some classical cliche programming arguments.</p>
+      
+      <form action="submit" id="survey-form">
+        <div class="question-container">
+          <div class="question-options">
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" placeholder="Camper Cat" id="name" required>
+          </div>
 
-      <label for="email" id="email-label">Email:</label>
-      <input type="email" placeholder="camper@cat.meow" id="email" required>
+          <div class="question-options">
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" placeholder="camper@cat.meow" id="email" required>
+          </div>
 
-      <label for="number" id="number-label">Age:</label>
-      <input type="number" placeholder="25" id="number" min="0" max="1000" required>
+          <div class="question-options">
+            <label for="number" id="number-label">Age:</label>
+            <input type="number" placeholder="25" id="number" min="0" max="1000" required>
+          </div>
+        </div>
 
-      <p>Vim or Emacs?</p>
-      <select name="editor" id="dropdown">
-        <option value="Vim">Vim</option>
-        <option value="Emacs">Emacs</option>
-      </select>
+        <div class="question-container">
+          <div class="question-header">
+            <p>Vim or Emacs?</p>
+          </div>
+          
+          <div class="question-options">
+            <select name="editor" id="dropdown">
+              <option value="Vim">Vim</option>
+              <option value="Emacs">Emacs</option>
+            </select>
+          </div>
+        </div>
 
-      <p>Tabs or spaces?</p>
-      <div>
-        <label for="tabs">Tabs</label>
-        <input type="radio" name="tabs-or-spaces" value="spaces" id="tabs">
-      </div>
+        <div class="question-container">
+          <div class="question-header">
+            <p>Tabs or spaces?</p>
+          </div>
 
-      <div>
-        <label for="spaces">Spaces</label>
-        <input type="radio" name="tabs-or-spaces" value="spaces" id="spaces">
-      </div>
+          <div class="question-options">
+            <div>
+              <input type="radio" name="tabs-or-spaces" value="spaces" id="tabs">
+              <label for="tabs">Tabs</label>
+            </div>
 
-      <p>Which of the following statements apply to you?</p>
-      <div>
-        <label for="single-quotes">I use single quotes for strings in JavaScript.</label>
-        <input type="checkbox" name="single-quotes" value="single-quotes" id="single-quotes">
-      </div>
+            <div>
+              <input type="radio" name="tabs-or-spaces" value="spaces" id="spaces">
+              <label for="spaces">Spaces</label>
+            </div>
+          </div>
+        </div>
 
-      <div>
-        <label for="no-semicolons">I don't use semicolons in JavaScript.</label>
-        <input type="checkbox" name="no-semicolons" value="no-semicolons" id="no-semicolons">
-      </div>
+        <div class="question-container">
+          <div class="question-header">
+            <p>Which of the following statements apply to you?</p>
+          </div>
 
-      <div>
-        <label for="too-lazy-for-const">I never use const because it's 2 more characters to type than let and that's hard.</label>
-        <input type="checkbox" name="too-lazy-for-const" value="too-lazy-for-const" id="too-lazy-for-const">
-      </div>
+          <div class="question-options">
+            <div>
+              <input type="checkbox" name="single-quotes" value="single-quotes" id="single-quotes">
+              <label for="single-quotes">I use single quotes for strings in JavaScript.</label>
+            </div>
 
-      <p>Enter any additional comments here.</p>
-      <textarea name="additional-comments" id="additional-comments" cols="30" rows="10"></textarea>
+            <div>
+              <input type="checkbox" name="no-semicolons" value="no-semicolons" id="no-semicolons">
+              <label for="no-semicolons">I don't use semicolons in JavaScript.</label>
+            </div>
 
-      <button id="submit">Submit</button>
-    </form>
+            <div>
+              <input type="checkbox" name="too-lazy-for-const" value="too-lazy-for-const" id="too-lazy-for-const">
+              <label for="too-lazy-for-const">I never use const because it's 2 more characters to type than let and that's hard.</label>
+            </div>
+          </div>
+        </div>
 
+        <p>Enter any additional comments here.</p>
+        <textarea name="additional-comments" id="additional-comments" cols="30" rows="10"></textarea>
+
+        <button id="submit">Submit</button>
+      </form>
+    </main> 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>

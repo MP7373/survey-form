@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik");
+body {
+  background-color: yellowgreen;
+  font-family: "Rubik", sans-serif;
+}
+
+main {
+  background-color: white;
+  border-radius: 2%;
+  margin: 5%;
+  padding: 5%;
+  text-align: center;
+}
+
+input, textarea {
+  padding: 1%;
+  font-size: 1.1em;
+}
+input:focus, textarea:focus {
+  outline: none;
+  border: 1px solid yellowgreen;
+  box-shadow: 0 0 10px yellowgreen;
+}
+
+button {
+  display: block;
+  margin: auto;
+  padding: 1%;
+  border-radius: 10%;
+  background-color: yellowgreen;
+  margin-top: 1%;
+  color: white;
+  font-size: 1.1em;
+}
+
+.question-container {
+  text-align: center;
+}
+.question-container .question-header {
+  text-align: center;
+}
+.question-container .question-options {
+  display: inline-block;
+  text-align: left;
+}
+
+#dropdown {
+  height: 2em;
+  width: 6em;
+  border: none;
+  background-color: yellowgreen;
+  color: white;
+  font-size: 1.1em;
+}
+
+/*# sourceMappingURL=style.css.map */

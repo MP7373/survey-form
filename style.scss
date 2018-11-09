@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+$font: 'Rubik', sans-serif;
+$primary-color: yellowgreen;
+$secondary-color: white;
+$radius: 2%;
+$margin: 5%;
+$big-padding: 5%;
+$small-padding: 1%;
+$input-font-size: 1.1em;
+
+body {
+  background-color: $primary-color;
+  font-family: $font;
+}
+
+main {
+  background-color: $secondary-color;
+  border-radius: $radius;
+  margin: $margin;
+  padding: $big-padding;
+  text-align: center;
+}
+
+input, textarea {
+  padding: $small-padding;
+  font-size: $input-font-size;
+
+  &:focus {
+    outline: none;
+    border: 1px solid $primary-color;
+    box-shadow: 0 0 10px $primary-color;
+  }
+}
+
+button {
+  display: block;
+  margin: auto;
+  padding: $small-padding;
+  border-radius: 10%;
+  background-color: $primary-color;
+  margin-top: 1%;
+  color: $secondary-color;
+  font-size: $input-font-size;
+}
+
+.question-container {
+  text-align: center;
+
+  .question-header {
+    text-align: center;
+  }
+
+  .question-options {
+    display: inline-block;
+    text-align: left;
+  }
+}
+
+#dropdown {
+  height: 2em;
+  width: 6em;
+  border: none;
+  background-color: $primary-color;
+  color: $secondary-color;
+  font-size: $input-font-size;
+}
