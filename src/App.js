@@ -5,7 +5,7 @@ class App extends Component {
     return (
       <div className="App">
         I'm App.js!
-        <SheetOfPaper />
+        <SheetOfPaper id="title" title="Survey Form" />
       </div>
     );
   }
