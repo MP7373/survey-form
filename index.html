@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Cliche Clashes in Programming</h1>
+    
+    <p id="description">The following survey collects data about which side is winning in all of the major programming battlefields. Choose your side!</p>
+    
+    <form action="submit" id="survey-form">
+      <label for="name" id="name-label">Name:</label>
+      <input type="text" placeholder="camper cat" id="name" required>
+
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" placeholder="camper@cat.meow" id="email" required>
+
+      <label for="number" id="number-label">Age:</label>
+      <input type="number" placeholder="25" id="number" min="0" max="1000" required>
+
+      <p>Vim or Emacs?</p>
+      <select name="editor" id="dropdown">
+        <option value="Vim">Vim</option>
+        <option value="Emacs">Emacs</option>
+      </select>
+
+      <p>Tabs or spaces?</p>
+      <div>
+        <label for="tabs">Tabs</label>
+        <input type="radio" name="tabs-or-spaces" value="spaces" id="tabs">
+      </div>
+
+      <div>
+        <label for="spaces">Spaces</label>
+        <input type="radio" name="tabs-or-spaces" value="spaces" id="spaces">
+      </div>
+
+      <p>Which of the following statements apply to you?</p>
+      <div>
+        <label for="single-quotes">I use single quotes for strings in JavaScript.</label>
+        <input type="checkbox" name="single-quotes" value="single-quotes" id="single-quotes">
+      </div>
+
+      <div>
+        <label for="no-semicolons">I don't use semicolons in JavaScript.</label>
+        <input type="checkbox" name="no-semicolons" value="no-semicolons" id="no-semicolons">
+      </div>
+
+      <div>
+        <label for="too-lazy-for-const">I never use const because it's 2 more characters to type than let and that's hard.</label>
+        <input type="checkbox" name="too-lazy-for-const" value="too-lazy-for-const" id="too-lazy-for-const">
+      </div>
+
+      <p>Enter any additional comments here.</p>
+      <textarea name="additional-comments" id="additional-comments" cols="30" rows="10"></textarea>
+
+      <button id="submit">Submit</button>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
